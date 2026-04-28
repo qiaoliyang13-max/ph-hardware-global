@@ -1,0 +1,17 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "products": "Products",
+    "news": "News",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "title": "Premium Shower & Glass Hardware Manufacturer",
+    "subtitle": "20+ years of professional manufacturing excellence. High-quality hinges, clamps, and architectural hardware for global markets.",
+    "cta": "Explore Products"
+  },
+  "Footer": {
+    "rights": "© 2026 PH Hardware. All rights reserved."
+  }
+}

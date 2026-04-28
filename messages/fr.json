@@ -1,0 +1,17 @@
+{
+  "Navigation": {
+    "home": "Accueil",
+    "products": "Produits",
+    "news": "Actualités",
+    "about": "À Propos",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "title": "Fabricant Premium de Quincaillerie pour Douche et Verre",
+    "subtitle": "Plus de 20 ans d'excellence en fabrication professionnelle. Charnières, pinces et quincaillerie architecturale de haute qualité pour les marchés mondiaux.",
+    "cta": "Explorer les Produits"
+  },
+  "Footer": {
+    "rights": "© 2026 PH Hardware. Tous droits réservés."
+  }
+}

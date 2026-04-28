@@ -1,0 +1,17 @@
+{
+  "Navigation": {
+    "home": "Inicio",
+    "products": "Productos",
+    "news": "Noticias",
+    "about": "Sobre Nosotros",
+    "contact": "Contacto"
+  },
+  "Hero": {
+    "title": "Fabricante de Herrajes Premium para Duchas y Vidrio",
+    "subtitle": "Más de 20 años de excelencia en fabricación profesional. Bisagras, grapas y herrajes arquitectónicos de alta calidad para mercados globales.",
+    "cta": "Explorar Productos"
+  },
+  "Footer": {
+    "rights": "© 2026 PH Hardware. Todos los derechos reservados."
+  }
+}
