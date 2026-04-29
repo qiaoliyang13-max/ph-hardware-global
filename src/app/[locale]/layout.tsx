@@ -3,7 +3,7 @@ import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
 import {metadata as siteMetadata} from '../metadata';
 import JsonLd from '@/components/JsonLd';
-import './globals.css';
+import '@/app/globals.css';
 
 const inter = Inter({subsets: ['latin']});
 
