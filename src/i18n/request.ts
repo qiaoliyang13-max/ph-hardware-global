@@ -1,8 +1,1 @@
-import {notFound} from 'next/navigation';
-import {getRequestConfig} from 'next-intl/server';
- 
-export default getRequestConfig(async ({locale}) => {
-  return {
-    messages: (await import(`../../messages/${locale}.json`)).default
-  };
-});
+import {getRequestConfig} from "next-intl/server"; export default getRequestConfig(async ({locale}) => { try { return { messages: (await import(`../../messages/${locale}.json`)).default }; } catch (e) { return { messages: (await import("../../messages/en.json")).default }; } });
