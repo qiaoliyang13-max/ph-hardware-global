@@ -18,7 +18,7 @@ export default function LanguageSwitcher() {
     {code: 'ru', name: 'Русский'}
   ];
 
-  const handleSwitch = (newLocale: string) => {
+  const handleSwitch = (newLocale: any) => {
     router.replace(pathname, {locale: newLocale});
     setIsOpen(false);
   };
