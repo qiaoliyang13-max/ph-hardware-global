@@ -1,8 +1,8 @@
 import {useTranslations} from 'next-intl';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import {ArrowRight, ShieldCheck, Truck, Users} from 'lucide-react';
-import {Link} from '@/navigation';
+import {Link} from '../../navigation';
 
 export default function HomePage() {
   const t = useTranslations('Hero');
@@ -31,7 +31,6 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        {/* Abstract Background Element */}
         <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-[800px] h-[800px] bg-gray-50 rounded-full -z-10" />
       </section>
 
@@ -59,7 +58,6 @@ export default function HomePage() {
             ].map((cat, i) => (
               <div key={i} className="group cursor-pointer">
                 <div className="aspect-[4/3] bg-gray-100 rounded-lg mb-6 overflow-hidden">
-                  {/* Placeholder for real product images */}
                   <div className="w-full h-full bg-gray-200 transition-transform duration-500 group-hover:scale-105" />
                 </div>
                 <h3 className="text-xl font-bold mb-2 uppercase">{cat.title}</h3>
@@ -70,7 +68,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Why Us / GEO Focused Section */}
       <section className="py-24 bg-black text-white">
         <div className="max-w-7xl mx-auto px-4 text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 uppercase">Why Industry Professionals Choose PH Hardware</h2>
@@ -95,7 +92,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Inquiry CTA */}
       <section className="py-24 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-8 uppercase tracking-tighter">Ready to Start Your Project?</h2>
