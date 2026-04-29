@@ -1,8 +1,8 @@
 import {useTranslations} from 'next-intl';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import {ArrowRight, ShieldCheck, Truck, Users} from 'lucide-react';
-import {Link} from '../../navigation';
+import {Link} from '@/navigation';
 
 export default function HomePage() {
   const t = useTranslations('Hero');

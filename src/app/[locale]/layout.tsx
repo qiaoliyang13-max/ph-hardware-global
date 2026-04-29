@@ -1,9 +1,9 @@
 import {Inter} from 'next/font/google';
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
-import {metadata as siteMetadata} from '../metadata';
-import JsonLd from '../../components/JsonLd';
-import '../globals.css';
+import {metadata as siteMetadata} from '@/app/metadata';
+import JsonLd from '@/components/JsonLd';
+import '@/app/globals.css';
 
 const inter = Inter({subsets: ['latin']});
 
