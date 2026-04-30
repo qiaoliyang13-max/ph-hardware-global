@@ -2,6 +2,10 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import {Link} from '@/navigation';
 
+interface PageProps {
+  params: { locale: string };
+}
+
 const NEWS_POSTS = [
   {
     title: "Trends in Modern Frameless Shower Design 2026",
@@ -23,7 +27,9 @@ const NEWS_POSTS = [
   }
 ];
 
-export default function NewsPage() {
+export default function NewsPage({ params }: PageProps) {
+  const { locale } = params;
+  
   return (
     <main>
       <Header />
@@ -45,7 +51,7 @@ export default function NewsPage() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4 group-hover:text-gray-600 transition-colors">{post.title}</h3>
                 <p className="text-gray-600 mb-6 line-clamp-2">{post.excerpt}</p>
-                <Link href={`/news/${post.slug}`} className="font-bold border-b-2 border-black pb-1 hover:text-gray-600 transition-colors uppercase text-sm">
+                <Link href={`/${locale}/news/${post.slug}`} className="font-bold border-b-2 border-black pb-1 hover:text-gray-600 transition-colors uppercase text-sm">
                   Read More
                 </Link>
               </article>

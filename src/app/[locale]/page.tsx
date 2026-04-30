@@ -4,7 +4,12 @@ import Footer from '@/components/Footer';
 import {ArrowRight, ShieldCheck, Truck, Users} from 'lucide-react';
 import {Link} from '@/navigation';
 
-export default function HomePage() {
+interface PageProps {
+  params: { locale: string };
+}
+
+export default function HomePage({ params }: PageProps) {
+  const { locale } = params;
   const t = useTranslations('Hero');
 
   return (
@@ -22,10 +27,10 @@ export default function HomePage() {
               {t('subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/products" className="btn-primary flex items-center justify-center gap-2">
+              <Link href={`/${locale}/products`} className="btn-primary flex items-center justify-center gap-2">
                 {t('cta')} <ArrowRight className="w-5 h-5" />
               </Link>
-              <Link href="/contact" className="btn-secondary flex items-center justify-center">
+              <Link href={`/${locale}/contact`} className="btn-secondary flex items-center justify-center">
                 Request a Quote
               </Link>
             </div>
@@ -42,7 +47,7 @@ export default function HomePage() {
               <h2 className="text-3xl font-bold mb-4 uppercase tracking-tighter">Product Categories</h2>
               <p className="text-gray-600">Precision engineered hardware for every architectural need.</p>
             </div>
-            <Link href="/products" className="text-black font-semibold border-b-2 border-black pb-1 hover:text-gray-600 transition-colors">
+            <Link href={`/${locale}/products`} className="text-black font-semibold border-b-2 border-black pb-1 hover:text-gray-600 transition-colors">
               View Catalog
             </Link>
           </div>
@@ -96,7 +101,7 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-8 uppercase tracking-tighter">Ready to Start Your Project?</h2>
           <p className="text-xl text-gray-600 mb-10">Get in touch with our engineering team for expert advice and competitive pricing.</p>
-          <Link href="/contact" className="btn-primary px-12 py-4 text-lg">
+          <Link href={`/${locale}/contact`} className="btn-primary px-12 py-4 text-lg">
             Request Wholesale Pricing
           </Link>
         </div>

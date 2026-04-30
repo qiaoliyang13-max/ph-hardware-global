@@ -2,7 +2,11 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import {Mail, Phone, MapPin, Send} from 'lucide-react';
 
-export default function ContactPage() {
+interface PageProps {
+  params: { locale: string };
+}
+
+export default function ContactPage({ params }: PageProps) {
   return (
     <main>
       <Header />

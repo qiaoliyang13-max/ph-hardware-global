@@ -1,7 +1,11 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-export default function AboutPage() {
+interface PageProps {
+  params: { locale: string };
+}
+
+export default function AboutPage({ params }: PageProps) {
   return (
     <main>
       <Header />
