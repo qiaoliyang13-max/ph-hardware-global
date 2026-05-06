@@ -1,12 +1,18 @@
 import createNextIntlPlugin from 'next-intl/plugin';
- 
-const withNextIntl = createNextIntlPlugin();
- 
+
+// 明确指定 i18n 请求配置文件路径
+const withNextIntl = createNextIntlPlugin('./src/i18n.ts');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['www.phhardware.com.cn'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.phhardware.com.cn',
+      },
+    ],
   },
 };
- 
+
 export default withNextIntl(nextConfig);
