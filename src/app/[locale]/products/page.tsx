@@ -1,16 +1,10 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import {PRODUCTS} from '@/data/products';
-import {Link} from '@/navigation';
-import {Filter} from 'lucide-react';
+import { PRODUCTS } from '@/data/products';
+import { Link } from '@/navigation';
+import { Filter } from 'lucide-react';
 
-interface PageProps {
-  params: { locale: string };
-}
-
-export default function ProductsPage({ params }: PageProps) {
-  const { locale } = params;
-  
+export default function ProductsPage() {
   return (
     <main>
       <Header />
@@ -30,7 +24,7 @@ export default function ProductsPage({ params }: PageProps) {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {PRODUCTS.map((product) => (
-              <Link href={`/${locale}/products/${product.id}`} key={product.id} className="group border rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 bg-white">
+              <Link href={`/products/${product.id}`} key={product.id} className="group border rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 bg-white">
                 <div className="aspect-square bg-gray-100 relative overflow-hidden">
                   <div className="absolute inset-0 bg-gray-200 group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute top-4 left-4 bg-black text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded">

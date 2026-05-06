@@ -1,15 +1,11 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-interface PageProps {
-  params: { locale: string };
-}
-
-export default function AboutPage({ params }: PageProps) {
+export default function AboutPage() {
   return (
     <main>
       <Header />
-      
+
       {/* History Section */}
       <section className="pt-32 pb-24">
         <div className="max-w-7xl mx-auto px-4">
@@ -40,22 +36,22 @@ export default function AboutPage({ params }: PageProps) {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4 uppercase">Our Core Expertise</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">We don't just manufacture parts; we provide solutions for the glass and glazing industry.</p>
+            <p className="text-gray-600 max-w-2xl mx-auto">We don&apos;t just manufacture parts; we provide solutions for the glass and glazing industry.</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
               {
-                title: "Precision Casting",
-                desc: "Utilizing advanced investment casting techniques to ensure dimensional accuracy and superior finish on all hinges and clamps."
+                title: 'Precision Casting',
+                desc: 'Utilizing advanced investment casting techniques to ensure dimensional accuracy and superior finish on all hinges and clamps.'
               },
               {
-                title: "Custom OEM/ODM",
-                desc: "From concept sketches to prototype to mass production. We help brands bring unique hardware designs to life."
+                title: 'Custom OEM/ODM',
+                desc: 'From concept sketches to prototype to mass production. We help brands bring unique hardware designs to life.'
               },
               {
-                title: "Surface Finishing",
-                desc: "State-of-the-art plating and coating lines for Chrome, Matte Black, Satin Nickel, and PVD finishes."
+                title: 'Surface Finishing',
+                desc: 'State-of-the-art plating and coating lines for Chrome, Matte Black, Satin Nickel, and PVD finishes.'
               }
             ].map((item, i) => (
               <div key={i} className="bg-white p-10 rounded-2xl border hover:shadow-lg transition-shadow">
@@ -75,7 +71,6 @@ export default function AboutPage({ params }: PageProps) {
             Our products are trusted by contractors, designers, and wholesalers across North America, Europe, Australia, and the Middle East. We understand the specific regulatory requirements of different markets and ensure full compliance with ANSI and CE standards.
           </p>
           <div className="flex justify-center gap-12 opacity-30 grayscale">
-            {/* Placeholder for partner/market logos */}
             <div className="h-8 w-24 bg-black" />
             <div className="h-8 w-24 bg-black" />
             <div className="h-8 w-24 bg-black" />

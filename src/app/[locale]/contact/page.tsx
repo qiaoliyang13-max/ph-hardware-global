@@ -1,12 +1,8 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import {Mail, Phone, MapPin, Send} from 'lucide-react';
+import { Mail, Phone, MapPin, Send } from 'lucide-react';
 
-interface PageProps {
-  params: { locale: string };
-}
-
-export default function ContactPage({ params }: PageProps) {
+export default function ContactPage() {
   return (
     <main>
       <Header />
@@ -75,7 +71,7 @@ export default function ContactPage({ params }: PageProps) {
                     <option>Shower Hinges</option>
                     <option>Glass Clamps</option>
                     <option>Sliding Hardware</option>
-                    <option>Standoffs & Posts</option>
+                    <option>Standoffs &amp; Posts</option>
                     <option>Custom ODM Project</option>
                   </select>
                 </div>
